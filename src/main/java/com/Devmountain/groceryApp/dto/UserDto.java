@@ -1,8 +1,8 @@
-package com.Devmountain.groceryApp.dto;
+package com.JPMC.JPMC2022.dto;
 
 import javax.persistence.*;
 
-import com.Devmountain.groceryApp.model.User;
+import com.JPMC.JPMC2022.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor; //makes life easier you need to write out setters and getters
@@ -20,7 +20,7 @@ public class UserDto implements Serializable {
     private Long id;
     private String username;
     private String password;
-    //private Set<NoteDto> noteSet = new HashSet<>(); don't need this yet
+    
 
     public UserDto(User user) {
         if(user.getId() != null) {
